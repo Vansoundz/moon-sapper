@@ -22,7 +22,12 @@
 </style>
 
 <svelte:head>
-  <link rel="stylesheet" href="" />
+  <meta property="og:title" content="Moon properties" />
+  <meta
+    property="og:description"
+    content="Moon properties:Showcase your properties, create account and list your properties" />
+  <meta property="og:url" content="https://moon-sv.netlify.app" />
+  <meta property="og:url" content="moon.svg" />
 </svelte:head>
 
 {#if !$auth.initialized}
