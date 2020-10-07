@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Fira Sans", sans-serif;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.content {
+  padding: 16px;
+}
+
+.error {
+  color: crimson;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    display: block;
+  }
+}
+
+.material-icons {
+  cursor: pointer;
+}
+
+.logo-svg > * {
+  fill: #5e2af1;
+}
+
+a {
+  color: #5e2af1;
+}
+
+.social {
+  display: flex;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.social > a:not(:first-child) {
+  margin-left: 8px;
+}
+
+/* Forms */
+.form-item {
+  position: relative;
+  margin: 12px 0;
+}
+
+.form-icon {
+  position: absolute;
+  margin-top: 5px;
+  color: #00000094;
+  font-size: 22px;
+  margin-left: 4px;
+}
+
+.form-item > input {
+  padding: 8px 0 8px 28px;
+}
+
+input,
+textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 280px;
+}
+
+textarea {
+  padding: 8px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid rgba(145, 227, 233, 0.857);
+}
+
+form button {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 24px;
+  background: #00d0ff;
+  box-shadow: 0px 0px 6px #b5b5b5;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background: #0033ffcb;
+}
+
+.sm {
+  display: none;
+}
+
+.lg {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-wrapper {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: calc(100% - 50px);
+    background: #fff;
+  }
+
+  .sm {
+    display: block;
+  }
+
+  .lg {
+    display: none;
+  }
+
+  .appbar-wrapper {
+    justify-content: space-between;
+  }
+}
+
+.auth {
+  /* width: calc(100vw - 200px); */
+  height: calc(100vh - 300px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
