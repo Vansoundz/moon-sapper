@@ -27,7 +27,13 @@
     property="og:description"
     content="Moon properties:Showcase your properties, create account and list your properties" />
   <meta property="og:url" content="https://moon-sv.netlify.app" />
-  <meta property="og:url" content="moon.svg" />
+  <meta property="og:image" content="https://moon-sv.netlify.app/moon.svg" />
+  <meta property="title" content="Moon properties" />
+  <meta
+    property="description"
+    content="Moon properties:Showcase your properties, create account and list your properties" />
+  <meta property="url" content="https://moon-sv.netlify.app" />
+  <meta property="image" content="https://moon-sv.netlify.app/moon.svg" />
 </svelte:head>
 
 {#if !$auth.initialized}
